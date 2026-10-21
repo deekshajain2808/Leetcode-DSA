@@ -1,0 +1,388 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMSzmOF/YcP0F1DMqw8mVfW",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/deekshajain2808/Leetcode-DSA/blob/main/123456\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ueiFCNB5BcnO",
+        "outputId": "71faa08b-e164-4fdf-f0b9-62aed70e567a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "original array: [10 25 50 65 80 40]\n",
+            "filtered array: [10 25 50 40]\n"
+          ]
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "arr=np.array([10,25,50,65,80,40])\n",
+        "threshold=50\n",
+        "result = arr[arr<= threshold]\n",
+        "print(\"original array:\",arr)\n",
+        "print(\"filtered array:\",result)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "arr=np.array([20,75,110,150,90,45])\n",
+        "threshold=100\n",
+        "result = arr[arr<= threshold]\n",
+        "print(\"filtered array:\",result)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KaGKJQ6fDw1w",
+        "outputId": "8a96f58f-ce7f-4282-ce0b-1d3df44af358"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "filtered array: [20 75 90 45]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "arr=np.array([5,15,25,35,45,55])\n",
+        "threshold=25\n",
+        "filtered = arr[arr<= threshold]\n",
+        "\n",
+        "print(\"filtered array:\",filtered)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K9KIhL-GEopr",
+        "outputId": "d251833a-8050-449c-9f51-d575136df7e0"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "filtered array: [ 5 15 25]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "temp=np.array([22,28,32,15,27,31])\n",
+        "threshold=30\n",
+        "result = temp[temp<= threshold]\n",
+        "print(\"temp:\",temp)\n",
+        "print(\"filtered temp:\",result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YHTdlwdTFPB3",
+        "outputId": "1928a86b-43dd-470b-e824-8fb9b222eb40"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "temp: [22 28 32 15 27 31]\n",
+            "filtered temp: [22 28 15 27]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "arr=np.array([12,30,45,60,75,90])\n",
+        "threshold=int(input(\"enter threshold\"))\n",
+        "result = arr[arr<= threshold]\n",
+        "print(\"filtered array:\",result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iMbMo0umGcwF",
+        "outputId": "1e04bd6d-b3f7-4141-ec4b-44bb2fb18e0c"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter threshold45\n",
+            "filtered array: [12 30 45]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "data={\n",
+        "    'Marks':[60,70,80,90,100]\n",
+        "    }\n",
+        "df = pd.DataFrame(data)\n",
+        "mean_value = df['Marks'].mean()\n",
+        "print(\"Mean Marks:\",mean_value)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uOGtsmdDH6Vp",
+        "outputId": "8cfc0649-29f6-4c87-d52b-7a91a0c12977"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mean Marks: 80.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "data={\n",
+        "    'C++':[70,80,90],\n",
+        "    'java\"':[50,60,70],\n",
+        "    'python':[40,50,60]\n",
+        "    }\n",
+        "df = pd.DataFrame(data)\n",
+        "print(df.mean(numeric_only=True))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eR2shK-YJFAp",
+        "outputId": "7d95e889-55d3-4c70-ba3f-1a8fd5c9d03a"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "C++       80.0\n",
+            "java\"     60.0\n",
+            "python    50.0\n",
+            "dtype: float64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "data={\n",
+        "    'Marks':[10,20,30,40,50]\n",
+        "    }\n",
+        "df = pd.DataFrame(data)\n",
+        "median_value = df['Marks'].median()\n",
+        "print(\"Median Marks:\",median_value)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0as80pm_KlEh",
+        "outputId": "e75edafd-819a-4e44-e073-433cc792bf85"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Median Marks: 30.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "data={\n",
+        "    'Marks':[60,70,80,90,100]\n",
+        "    }\n",
+        "df = pd.DataFrame(data)\n",
+        "mode_value = df['Marks'].mode()\n",
+        "print(\"Mode Marks:\")\n",
+        "print(mode_value)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bYXbfHi_OAoI",
+        "outputId": "eeca687a-6789-4741-d7d6-6e59101674e7"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mode Marks:\n",
+            "0     60\n",
+            "1     70\n",
+            "2     80\n",
+            "3     90\n",
+            "4    100\n",
+            "Name: Marks, dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "data={\n",
+        "    'Marks':[10,20,20,30,40]\n",
+        "    }\n",
+        "df = pd.DataFrame(data)\n",
+        "mode_value = df['Marks'].mode()\n",
+        "print(\"Mode Marks:\")\n",
+        "print(mode_value)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ov59QkCJO_M9",
+        "outputId": "78f25b71-0530-4608-d985-87be2984b0e8"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mode Marks:\n",
+            "0    20\n",
+            "Name: Marks, dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import re\n",
+        "text =\"Python is easy to learn\"\n",
+        "result = re.match(\"Python\",text)\n",
+        "if result:\n",
+        "  print(\"Pattern matched:\",result.group())\n",
+        "else:\n",
+        "  print(\"Pattern not matched\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rQKe79H5PVfe",
+        "outputId": "e6e2dc4f-34b6-4c41-a33b-e2742bda982d"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Pattern matched: Python\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import re\n",
+        "text =\"123Student\"\n",
+        "result = re.match(r\"\\d+\",text)\n",
+        "if result:\n",
+        "  print(\"Matched digits:\",result.group())\n",
+        "else:\n",
+        "  print(\"No digits found at the begining\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DWSZ9khsQx7G",
+        "outputId": "cd389176-c594-49c1-a330-f828fd3bebc6"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Matched digits: 123\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
