@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMSzmOF/YcP0F1DMqw8mVfW",
+      "authorship_tag": "ABX9TyN75IOZJVx4e8ybjRU1b//T",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -383,6 +383,19 @@
           ]
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import re\n",
+        "text =\"i have 2 bk , 5 pens,and 10 pencis\"\n",
+        "result =refinda"
+      ],
+      "metadata": {
+        "id": "GfewygubST7Q"
+      },
+      "execution_count": null,
+      "outputs": []
     }
   ]
 }
